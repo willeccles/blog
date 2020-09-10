@@ -27,11 +27,12 @@ fi
 Created $DATE
 EOM
 
-POSTS="$(tail -n +2 $BLOGDIR/README.md)"
->"$BLOGDIR/README.md" cat - <<EOM
-# Posts
-$DATE - [$TITLE]($DATE.md)
-$POSTS
-EOM
+INDEX="$BLOGDIR/index"
+
+cat - "$INDEX" <<<"$DATE:$TITLE" >/tmp/tmpindex
+
+mv /tmp/tmpindex "$INDEX"
+
+"$BLOGDIR/../maketoc.sh"
 
 echo "Post created: $FNAME"
