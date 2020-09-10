@@ -27,7 +27,7 @@ fi
 Created $DATE
 EOM
 
-INDEX="$BLOGDIR/index"
+INDEX="$BLOGDIR/index.txt"
 
 cat - "$INDEX" <<<"$DATE:$TITLE" >/tmp/tmpindex
 
