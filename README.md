@@ -10,4 +10,5 @@ This is my blog. Read it if you wish, I'm not going to force you. Posts are
 listed below in reverse chronological order.
 
 ## Posts
-[2020-09-08](posts/2020-09-08.md) - First Post
+- [2021-01-14](posts/2021-01-14.md) - Today I Ate an Entire Tin of Altoids
+- [2020-09-08](posts/2020-09-08.md) - First Post
